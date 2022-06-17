@@ -1,0 +1,13 @@
+.CharacterList-container {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px;
+    gap: 40px;
+  }
+  
+  .CharacterList-Container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
