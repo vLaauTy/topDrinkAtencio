@@ -53,10 +53,10 @@ export default function CharacterCardDetail({ item }) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345}}>
       <CardMedia
         component="img"
-        height="600"
+        height="330"
         image={item.img}
         alt={item.name}
       />
@@ -79,7 +79,7 @@ export default function CharacterCardDetail({ item }) {
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
           {!buy ? (
-            <Link to="/cart2">
+            <Link to="/cart">
               <Button>Finalizar Compra</Button>
             </Link>
           ) : (

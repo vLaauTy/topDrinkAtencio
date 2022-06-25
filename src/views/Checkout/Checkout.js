@@ -74,11 +74,6 @@ const Checkout = () => {
 
   return (
     <div>
-      {items.length === 0 ? <div><h3>Formulario no disponible!, Comienze a comprar</h3>
-          <Button>
-            <Link to="/">Home</Link>
-          </Button>
-          </div> :
       <div className="d-flex justify-content-center">
         {state ? (
           <div className="" style={{ width: "70%" }}>
@@ -157,7 +152,6 @@ const Checkout = () => {
           </div>
         )}
       </div>
-}
     </div>
   );
 };
