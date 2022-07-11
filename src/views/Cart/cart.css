@@ -2,3 +2,12 @@
     max-width: 100px;
     max-height: 100px;
 }
+
+@media screen and (max-width: 644px) {
+
+
+    .btn{
+        margin: auto;
+        font-size: 12px;
+    }
+   }

@@ -8,6 +8,7 @@ import CategoryDetail from "./views/CategoryDetail/CategoryDetail";
 import Checkout from "./views/Checkout/Checkout";
 import { ToastContainer } from "react-toastify";
 import { Cart } from "./views/Cart/Cart";
+import NavBarPrueba from "./components/NavBarPrueba";
 
 function App() {
   const [loading, setloading] = useState(true);
@@ -23,9 +24,11 @@ function App() {
     <CartProvider>
       <BrowserRouter>
         <div style={{ textAlign: "center" }}>
-          <NavBar />
+        <NavBarPrueba></NavBarPrueba>
+          {/* <NavBar /> */}
           {loading && <div className="spinner-border" role="status"></div>}
           <Routes>
+            
             <Route path="/" element={<Home />} />
             <Route path="/detail/:id" element={<CharacterDetail />} />
             <Route path="/category/:category" element={<CategoryDetail />} />

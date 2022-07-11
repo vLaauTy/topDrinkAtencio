@@ -35,7 +35,7 @@ const CategoryDetail = () => {
   return (
     <div>
       <h1>{capitalizarPrimeraLetra(category)}</h1>
-      <div className="CharacterList-container">
+      <div className="grid">
         {item.map((char) => {
           return (
             <div key={char.id}>

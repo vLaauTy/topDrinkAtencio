@@ -24,7 +24,7 @@ const CharacterList = () => {
 
   return (
     <div>
-      <div className="CharacterList-container">
+      <div className="grid">
         {items.map((data) => {
           return (
             <Link

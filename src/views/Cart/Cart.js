@@ -51,7 +51,7 @@ export const Cart = () => {
                                             currency: "ARS",
                                           }).format(item.price * item.quantity)}
                                         </td>
-                                        <td>
+                                        <td className="operadores">
                                           <button
                                             onClick={() => sacar(item)}
                                             className="btn btn-outline-dark ms-1"

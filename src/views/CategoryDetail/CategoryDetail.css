@@ -1,6 +1,25 @@
-.CharacterList-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 40px;
-    gap: 40px;
+.grid {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 40px;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .grid {
+     grid-template-columns: 1fr 1fr 1fr;
   }
+ }
+
+ @media screen and (max-width: 900px) {
+  .grid {
+     grid-template-columns: 1fr 1fr ;
+  }
+ }
+
+ @media screen and (max-width: 580px) {
+  .grid {
+     grid-template-columns: 1fr  ;
+  }
+ }
